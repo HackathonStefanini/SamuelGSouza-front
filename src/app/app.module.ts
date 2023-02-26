@@ -11,6 +11,8 @@ import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
 import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
+
 import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
@@ -25,7 +27,8 @@ import { HomeModule } from './modules/home/home.module';
     ButtonModule,
     MenubarModule,
     InputTextModule,
-    HomeModule
+    HomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
