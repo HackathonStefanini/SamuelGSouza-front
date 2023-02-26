@@ -10,13 +10,13 @@
         <h1 class="p-text-center">Cadastrar novo Jogador</h1>
         <div class="p-field p-mt-3">
           <label for="login" class="p-sr-only">Login</label>
-          <input id="login" type="text" pInputText placeholder="Login">
+          <input [(ngModel)]="jogador.nickname" id="login" type="text" pInputText placeholder="Login">
         </div>
         <div class="p-field">
           <label for="senha" class="p-sr-only">Senha</label>
-          <input id="senha" type="password" pInputText placeholder="Senha">
+          <input [(ngModel)]="jogador.password" id="senha" type="password" pInputText placeholder="Senha">
         </div>
-        <button pButton label="Cadastrar" type="button" class="p-button-success" label="Cadastrar"></button>
+        <button pButton (click)="cadastrarJogador()" label="Cadastrar" type="button" class="p-button-success" label="Cadastrar"></button>
       </div>
     </div>
   </div>
