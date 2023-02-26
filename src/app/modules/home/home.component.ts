@@ -24,7 +24,6 @@ export class HomeComponent implements OnInit {
   }
 
   cadastrarJogador() {
-    console.log('cliquei')
     this.jogadorService.cadastrar(this.jogador).subscribe(
       () => alert("Usuário cadastrado!"),
       () => alert("Erro ao cadastrar")
