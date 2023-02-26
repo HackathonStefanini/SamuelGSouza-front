@@ -16,8 +16,10 @@ export class LoginService {
   logar(login: Login) {
     return this.http.post<Login>(this.API, login);
   }
-  
+
   deslogar() {
     localStorage.clear();
   }
+
+  estaLogado = () => !!localStorage.getItem("TOKEN");
 }
